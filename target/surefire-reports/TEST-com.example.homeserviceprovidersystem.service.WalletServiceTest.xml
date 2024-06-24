@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.homeserviceprovidersystem.HomeServiceProviderSystemApplicationTests" time="18.353" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.homeserviceprovidersystem.service.WalletServiceTest" time="1.166" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="20"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -66,36 +66,20 @@
     <property name="java.class.version" value="64.0"/>
     <property name="LOGGED_APPLICATION_NAME" value="[home-service-provider-system] "/>
   </properties>
-  <testcase name="contextLoads" classname="com.example.homeserviceprovidersystem.HomeServiceProviderSystemApplicationTests" time="1.568">
-    <system-out><![CDATA[12:34:03.750 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.homeserviceprovidersystem.HomeServiceProviderSystemApplicationTests]: HomeServiceProviderSystemApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-12:34:03.949 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.homeserviceprovidersystem.HomeServiceProviderSystemApplication for test class com.example.homeserviceprovidersystem.HomeServiceProviderSystemApplicationTests
-
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
- :: Spring Boot ::                (v3.2.3)
-
-2024-06-24T12:34:04.818+03:30  INFO 13144 --- [home-service-provider-system] [           main] omeServiceProviderSystemApplicationTests : Starting HomeServiceProviderSystemApplicationTests using Java 20.0.1 with PID 13144 (started by Administrator in E:\mehdi\projects\different projects\Answers hws maktab sharif\hw25-test\home-service-provider-system-test)
-2024-06-24T12:34:04.820+03:30  INFO 13144 --- [home-service-provider-system] [           main] omeServiceProviderSystemApplicationTests : No active profile set, falling back to 1 default profile: "default"
-2024-06-24T12:34:06.655+03:30  INFO 13144 --- [home-service-provider-system] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-24T12:34:07.027+03:30  INFO 13144 --- [home-service-provider-system] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 355 ms. Found 9 JPA repository interfaces.
-2024-06-24T12:34:08.165+03:30  INFO 13144 --- [home-service-provider-system] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-24T12:34:08.287+03:30  INFO 13144 --- [home-service-provider-system] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-06-24T12:34:08.370+03:30  INFO 13144 --- [home-service-provider-system] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-06-24T12:34:09.083+03:30  INFO 13144 --- [home-service-provider-system] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-06-24T12:34:09.156+03:30  INFO 13144 --- [home-service-provider-system] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-06-24T12:34:09.771+03:30  INFO 13144 --- [home-service-provider-system] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@faec277
-2024-06-24T12:34:09.775+03:30  INFO 13144 --- [home-service-provider-system] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-06-24T12:34:09.842+03:30  WARN 13144 --- [home-service-provider-system] [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-06-24T12:34:12.570+03:30  INFO 13144 --- [home-service-provider-system] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-06-24T12:34:13.037+03:30  INFO 13144 --- [home-service-provider-system] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-06-24T12:34:15.492+03:30  INFO 13144 --- [home-service-provider-system] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-06-24T12:34:17.388+03:30  WARN 13144 --- [home-service-provider-system] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-06-24T12:34:18.620+03:30  INFO 13144 --- [home-service-provider-system] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@68f4c6e7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33bd3549, org.springframework.security.web.context.SecurityContextHolderFilter@2b3247f8, org.springframework.security.web.header.HeaderWriterFilter@515d6c9f, org.springframework.web.filter.CorsFilter@806a687, org.springframework.security.web.authentication.logout.LogoutFilter@636e6791, com.example.homeserviceprovidersystem.security.JwtAuthenticationFilter@53c21c05, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6dd65b79, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b136640, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7df5358, org.springframework.security.web.session.SessionManagementFilter@333ab718, org.springframework.security.web.access.ExceptionTranslationFilter@3ffa3cdb, org.springframework.security.web.access.intercept.AuthorizationFilter@7ff48cdc]
-2024-06-24T12:34:20.185+03:30  INFO 13144 --- [home-service-provider-system] [           main] omeServiceProviderSystemApplicationTests : Started HomeServiceProviderSystemApplicationTests in 15.963 seconds (process running for 17.693)
+  <testcase name="findWalletForCustomer" classname="com.example.homeserviceprovidersystem.service.WalletServiceTest" time="0.748">
+    <system-out><![CDATA[2024-06-24T12:34:22.155+03:30  INFO 13144 --- [home-service-provider-system] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.homeserviceprovidersystem.service.WalletServiceTest]: WalletServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-06-24T12:34:22.158+03:30  INFO 13144 --- [home-service-provider-system] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.homeserviceprovidersystem.HomeServiceProviderSystemApplication for test class com.example.homeserviceprovidersystem.service.WalletServiceTest
+Hibernate: select c1_0.id,c1_0.email,c1_0.first_name,c1_0.last_name,c1_0.password,c1_0.registration_date,c1_0.registration_time,c1_0.wallet_id from customer c1_0 where c1_0.email=?
+Hibernate: select w1_0.id,w1_0.price from wallet w1_0 where w1_0.id=?
+]]></system-out>
+  </testcase>
+  <testcase name="save" classname="com.example.homeserviceprovidersystem.service.WalletServiceTest" time="0.339">
+    <system-out><![CDATA[Hibernate: insert into wallet (price) values (?)
+]]></system-out>
+  </testcase>
+  <testcase name="findWalletForExpert" classname="com.example.homeserviceprovidersystem.service.WalletServiceTest" time="0.064">
+    <system-out><![CDATA[Hibernate: select e1_0.id,e1_0.email,e1_0.expert_status,e1_0.first_name,e1_0.last_name,e1_0.password,e1_0.picture_data,e1_0.registration_date,e1_0.registration_time,e1_0.score,e1_0.wallet_id from expert e1_0 where e1_0.email=?
+Hibernate: select w1_0.id,w1_0.price from wallet w1_0 where w1_0.id=?
 ]]></system-out>
   </testcase>
 </testsuite>
